@@ -18,7 +18,7 @@ const napasQR = require('napas-qr');
 const qrProps = {
   qrType: 'DYNAMIC', // STATIC
   bin: '970416',
-  receiverNumber: '224123456',
+  receiverNumber: '224528479',
   instrumentType: 'ACCOUNT', // CARD
   amount: 10000,
   orderId: 'NPS6869',
@@ -26,7 +26,7 @@ const qrProps = {
 };
 
 const qrContent = napasQR.generateQRContent(qrProps);
-// 00020101021138570010A00000072701270006970403011200110123456780208QRIBFTTA53037045802VN6304
+// 00020101021238530010A0000007270123000697041601092245284790208QRIBFTTA53037045405100005802VN62340107NPS68690819TRANSFER TO SOMEONE6304AC13
 ```
 
 You also can generate qr image by using package [`qrcode`](https://www.npmjs.com/package/qrcode)
