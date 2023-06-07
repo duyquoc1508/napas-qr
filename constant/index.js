@@ -9,4 +9,5 @@ module.exports = {
   },
   CRC_ID: '63',
   CRC_LENGTH: '04',
+  ATM_CARD_NUMBER_PREFIX: '9704'
 }

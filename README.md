@@ -16,10 +16,10 @@ $ npm install --save napas-qr
 const napasQR = require('napas-qr');
 
 const qrProps = {
-  qrType: 'DYNAMIC', // STATIC
+  qrType: 'DYNAMIC',
   bin: '970416',
   receiverNumber: '224528479',
-  instrumentType: 'ACCOUNT', // CARD
+  instrumentType: 'ACCOUNT',
   amount: 10000,
   orderId: 'NPS6869',
   description: 'TRANSFER TO SOMEONE'
@@ -55,12 +55,12 @@ qr.toFile(
 
 ## QR Properties
 
-| Params         | Type   | Required | Description                                           |
-| -------------- | ------ | -------- | ----------------------------------------------------- |
-| qrType         | String | Yes\*    | Type of QR to generate. Enums = ['STATIC', 'DYNAMIC'] |
-| bin            | String | Yes\*    | Bank bin                                              |
-| receiverNumber | String | Yes\*    | Account number or card number                         |
-| instrumentType | String | Yes\*    | Value of receiver number. Enums = ['ACCOUNT', 'CARD'] |
-| amount         | Number | Optional | Amount. Optional if `qrType` = 'STATIC'               |
-| orderId        | String | Optional | Order id                                              |
-| description    | String | Optional | Description                                           |
+| Params         | Type   | Required | Description                                                                   |
+| -------------- | ------ | -------- | ----------------------------------------------------------------------------- |
+| qrType         | String | Yes\*    | Type of QR to generate. Enums = ['STATIC', 'DYNAMIC']                         |
+| bin            | String | Yes\*    | Bank bin                                                                      |
+| receiverNumber | String | Yes\*    | Account number or card number                                                 |
+| instrumentType | String | Yes\*    | Type of receiver number. Enums = ['ACCOUNT', 'CARD']. *Don't need after v1.0.4* |
+| amount         | Number | Optional | Amount. Optional if `qrType` = 'STATIC'                                       |
+| orderId        | String | Optional | Order id                                                                      |
+| description    | String | Optional | Description                                                                   |
