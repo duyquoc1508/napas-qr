@@ -28,6 +28,7 @@ const qrProps = {
 const qrContent = napasQR.generateQRContent(qrProps);
 // 00020101021238530010A0000007270123000697041601092245284790208QRIBFTTA53037045405100005802VN62340107NPS68690819TRANSFER TO SOMEONE6304AC13
 ```
+This package only creates QR content, allowing you to generate the QR image in any format you desire. You can enhance the image by adding a logo, color, or any shape.
 
 You also can generate qr image by using package [`qrcode`](https://www.npmjs.com/package/qrcode)
 
